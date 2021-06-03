@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     'product'
 ]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -109,6 +112,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STRIPE_SECRET_KEY = "sk_test_51Ixm9xLjteAOJIa0wd5Zf84aHqwgCptGSIBUW4NkhIF0qUcWd9tFSFcAYF4SYy7OIRhdonTUDQxk1LKFX78tuDVC00rn3Ucerq"
+STRIPE_SECRET_KEY = 'sk_test_51Ixm9xLjteAOJIa0wd5Zf84aHqwgCptGSIBUW4NkhIF0qUcWd9tFSFcAYF4SYy7OIRhdonTUDQxk1LKFX78tuDVC00rn3Ucerq'
 STRIPE_PUBLIC_KEY = "pk_test_51Ixm9xLjteAOJIa0Rz8F1lPyfFdy8CcZKP1Mebv3KViRvS2R0eGU8a3ERmwhiSVFDIAXmpRjS9QRlGzUhLqFJBvV00x3tjxFn6"
 STRIPE_WEBHOOK = "whsec_buZTG6iiCFVk41lb5UWRYuC2J7j8Xx7J"

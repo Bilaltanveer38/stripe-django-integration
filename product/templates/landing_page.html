@@ -262,6 +262,9 @@ button:disabled {
           document.querySelector("button").disabled = event.empty;
           document.querySelector("#card-error").textContent = event.error ? event.error.message : "";
       });
+
+      //Payment using the form incorporated in your own app
+
       const form = document.getElementById("payment-form");
       form.addEventListener("submit", function(event) {
           event.preventDefault();
