@@ -4,7 +4,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
-STATIC_DIR=os.path.join(BASE_DIR, '')
+STATIC_DIR = os.path.join(BASE_DIR, '')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'product'
 ]
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -111,4 +111,4 @@ STATIC_URL = '/static/'
 
 STRIPE_SECRET_KEY = "sk_test_51Ixm9xLjteAOJIa0wd5Zf84aHqwgCptGSIBUW4NkhIF0qUcWd9tFSFcAYF4SYy7OIRhdonTUDQxk1LKFX78tuDVC00rn3Ucerq"
 STRIPE_PUBLIC_KEY = "pk_test_51Ixm9xLjteAOJIa0Rz8F1lPyfFdy8CcZKP1Mebv3KViRvS2R0eGU8a3ERmwhiSVFDIAXmpRjS9QRlGzUhLqFJBvV00x3tjxFn6"
-STRIPE_WEBHOOK = ""
+STRIPE_WEBHOOK = "whsec_buZTG6iiCFVk41lb5UWRYuC2J7j8Xx7J"
